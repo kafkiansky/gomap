@@ -57,7 +57,7 @@ import (
 )
 
 func main() {
-  fmt.Println(gomap.FromSlice([]string{"x", "y"}).Map()) // map[1:x, 2:y]
+  fmt.Println(gomap.FromSlice([]string{"x", "y"}).Map()) // map[0:x, 1:y]
 }
 ```
 
