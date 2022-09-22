@@ -137,7 +137,7 @@ func (m Map[K, V]) Chunk(size uint) []Map[K, V] {
 
 		if uint(len(chunk)) >= size {
 			maps = append(maps, newMap(chunk))
-			chunk = map[K]V{}
+			chunk = make(map[K]V, size)
 		}
 	}
 
